@@ -154,6 +154,8 @@ nav{
     text-align: left;
     border: 1px solid rgba(0, 191, 255, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    z-index: 1000;
 }
 
 .card:hover{
