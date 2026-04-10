@@ -242,3 +242,53 @@ nav{
         transform: translateY(0);
     }
 }
+
+/* Project Detail Page */
+#project-detail {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 50px;
+}
+
+#project-detail h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.project-meta {
+    color: #00bfff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.project-desc {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.project-links {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-outline {
+    padding: 12px 30px;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #00bfff;
+    color: #0a0a0a;
+}
