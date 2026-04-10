@@ -1,39 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact - Kaden</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-logo">Kaden</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Kaden's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="stars-canvas"></canvas>
+  <nav class="navbar">
+    <div class="nav-logo">Kaden</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out for collaborations or just a chat!</p>
-            <div class="contact-links">
-                <a href="mailto:kadenkho@gmail.com" class="btn">Email Me</a>
-                <a href="https://github.com/Kades321" target="_blank" class="btn-outline">GitHub</a>
-                <a href="https://www.linkedin.com/in/kaden-kho-925a362b1/" target="_blank" class="btn-outline">LinkedIn</a>
-            </div>
-        </section>
-        <footer>
-    <p>© 2026 Kaden · 
-        <a href="https://github.com/Kades321" target="_blank">GitHub</a> · 
-        <a href="https://www.linkedin.com/in/kaden-kho-925a362b1/" target="_blank">LinkedIn</a> · 
-        <a href="mailto:kadenkho@gmail.com">Email</a>
-    </p>
+  <section class="contact-section">
+    <div class="contact-wrap">
+      <div class="contact-label">Get in touch</div>
+      <h1>Contact Me</h1>
+      <p class="contact-subtitle">Have a project in mind or just want to connect?<br>Drop a message and I'll get back to you.</p>
+      <div class="glass-card">
+        <form id="contact-form">
+          <div class="field-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="field-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="send-btn">Send Message</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+
+      <!-- ↓ social chips added here, after the glass card -->
+      <div class="info-row">
+        <div class="info-chip"><div class="chip-dot"></div><a href="mailto:kadenkho@gmail.com">kadenkho@gmail.com</a></div>
+        <div class="info-chip"><div class="chip-dot"></div><a href="https://github.com/Kades321" target="_blank">GitHub</a></div>
+        <div class="info-chip"><div class="chip-dot"></div><a href="https://www.linkedin.com/in/kaden-kho-925a362b1/" target="_blank">LinkedIn</a></div>
+        <div class="info-chip"><div class="chip-dot"></div><a href="https://www.facebook.com/kaden.kho.5/" target="_blank" rel="noopener">Facebook</a></div>
+        <div class="info-chip"><div class="chip-dot"></div><a href="https://x.com/KadenKho" target="_blank" rel="noopener">Twitter / X</a></div>
+        <div class="info-chip"><div class="chip-dot"></div><a href="https://www.instagram.com/kaaaaades/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ↓ footer updated with social icons -->
+ <footer>
+  <p>© 2026 Kaden · <a href="https://github.com/Kades321">GitHub</a> · <a href="https://www.linkedin.com/in/kaden-kho-925a362b1/">LinkedIn</a> · <a href="mailto:kadenkho@gmail.com">Email</a></p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/kaden.kho.5/" target="_blank" title="Facebook" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://x.com/KadenKho" target="_blank" title="X / Twitter" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/kaaaaades/" target="_blank" title="Instagram" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" style="fill:#020818"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" style="stroke:#020818;stroke-width:2;stroke-linecap:round"/></svg>
+    </a>
+  </div>
 </footer>
-        <script src="script.js"></script>
-    </body>
+
+  <script src="script.js"></script>
+  <script>
+    const form = document.getElementById('contact-form');
+    const btn = document.getElementById('send-btn');
+    const statusEl = document.getElementById('form-status');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      statusEl.textContent = '';
+      statusEl.className = 'form-status';
+      try {
+        const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+          }),
+        });
+        if (res.ok) {
+          statusEl.textContent = "✓ Message sent! I'll get back to you soon.";
+          statusEl.className = 'form-status success';
+          form.reset();
+        } else { throw new Error(); }
+      } catch {
+        statusEl.textContent = '✗ Something went wrong. Try emailing me directly.';
+        statusEl.className = 'form-status error';
+      }
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    });
+  </script>
+</body>
 </html>
