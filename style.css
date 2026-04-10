@@ -181,41 +181,6 @@ nav{
     color: #00bfff;
 }
 
-/* Skills */
-#skills {
-    padding: 80px 50px;
-    text-align: center;
-}
-
-#skills h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color:#00bfff;
-    text-shadow:  0 0 10px #00bfff;
-}
-
-.skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.skills-list li {
-    background: rgba(0, 191, 255, 0.05);
-    padding: 10px 25px;
-    border-radius: 25px;
-    color: #00bfff;
-    font-size: 1rem;
-    border: 1px solid rgba(0, 191, 255, 0.5);
-    transition: box-shadow 0.3s;
-}
-
-.skills-list li:hover{
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
-}
-
 /* Contact */
 #contact {
     padding: 80px 50px;
@@ -301,4 +266,71 @@ nav{
 .btn-outline:hover {
     background-color: #00bfff;
     color: #0a0a0a;
+}
+
+/* Skills */
+#skills {
+    padding: 80px 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+.skills-category {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.skills-category h3 {
+    color: #00bfff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: rgba(0, 191, 255, 0.05);
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: #00bfff;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.skills-list span:hover {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 50px;
+    border-top: 1px solid rgba(0, 191, 255, 0.1);
+    color: #aaaaaa;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-shadow: 0 0 8px #00bfff;
 }
