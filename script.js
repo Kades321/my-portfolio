@@ -58,3 +58,18 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Typing animation
+const typingText = document.querySelector('#hero p');
+if (typingText) {
+    const text = typingText.textContent;
+    typingText.textContent = '';
+    let i = 0;
+    setTimeout(() => {
+        const interval = setInterval(() => {
+            typingText.textContent += text[i];
+            i++;
+            if (i >= text.length) clearInterval(interval);
+        }, 50);
+    }, 800);
+}
