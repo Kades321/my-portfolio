@@ -234,6 +234,13 @@ nav{
     margin-bottom: 30px;
 }
 
+.contact-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
