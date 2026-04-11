@@ -73,3 +73,21 @@ if (typingText) {
         }, 50);
     }, 800);
 }
+
+// ── Theme Toggle ──
+const themeBtn = document.getElementById('theme-toggle');
+const saved = localStorage.getItem('theme');
+
+if (saved === 'light') {
+  document.body.classList.add('light-mode');
+  if (themeBtn) themeBtn.textContent = '☀️';
+}
+
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    themeBtn.textContent = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+}
